@@ -18,7 +18,7 @@ A browser-based number guessing game with a **global leaderboard powered by Supa
 
 ## 📷 Preview
 
-![Game Screenshot](screenshot.png)
+![Game Screenshot](Screenshot 2026-06-24 003505.png)
 
 ---
 
