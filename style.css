@@ -1,0 +1,123 @@
+/* --- Global Body Layout --- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* --- Input Fields (Name and Guess) --- */
+#UserName, #UserInput {
+    display: block; 
+    width: 100%;
+    max-width: 400px;
+    margin: 15px auto;
+    padding: 15px;
+    font-size: 1.1em;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    transition: border-color 0.25s;
+}
+
+#UserName:focus, #UserInput:focus {
+    border-color: aqua;
+    outline: none;
+}
+
+/* --- Submit Button --- */
+#btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 30px;
+    font-size: 1.5em;
+    color: white;
+    background-color: aqua;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.25s, transform 0.1s;
+    text-align: center;
+}
+
+#btn:hover {
+    background-color: darkcyan;
+}
+
+#btn:active {
+    transform: scale(0.98); /* Slight click feedback effect */
+}
+
+/* --- Game Feedback Box --- */
+.route-box {
+    text-align: center;
+    margin-top: 30px; 
+    padding: 15px;
+}
+
+#H, #H1 {
+    font-size: 1.1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+#My-route {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(119, 0, 255);
+}
+
+#attempts {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: rgba(201, 115, 9, 0.756);
+}
+
+/* --- Global Scoreboard Container --- */
+.leaderboard-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.leaderboard-container h3 {
+    margin-top: 0;
+    font-size: 1.6em;
+    color: #222;
+}
+
+/* --- Table Styling --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #666;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+tr:hover {
+    background-color: #fafafa; /* Highlight row on hover */
+}
+
+/* Style for the top ranker to make it stand out */
+tbody tr:first-child td {
+    font-weight: bold;
+    color: #ffaa00; 
+}

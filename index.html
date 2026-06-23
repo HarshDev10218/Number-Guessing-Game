@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="user-setup">
+        <input id="UserName" placeholder="Enter Your Name" maxlength="15">
+    </div>
+    
+    <input id="UserInput" placeholder="Enter Guess">
+    <br>
+    <button id="btn">Submit</button>
+
+    <div class="route-box">
+        <h4 id="H">with respect to the secret number:</h4> 
+        <br>
+        <span id="My-route">Waiting for input</span>
+        <br><br>
+        <h4 id="H1">no.of attempts</h4> 
+        <br>
+        <span id="attempts">0</span>
+    </div>
+
+    <div class="leaderboard-container">
+        <h3>🏆 Global Leaderboard</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Player</th>
+                    <th>Attempts</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard-body">
+                <tr>
+                    <td colspan="3">Loading scores...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="index.js"></script>
+</body>
+</html>
